@@ -1,0 +1,49 @@
+<div class="wrapper">
+
+    <!--Introduction-->
+    <div class="page-header section-dark" style="background-image: url('assets/img/Polycarb-sketch.jpg')">
+        <div class="filter"></div>
+        <div class="content-center">
+            <div class="container">
+                <div class="title-brand">
+                    <div class="angular-logo">
+                        <img src="assets/img/AvalonLogo.png" alt="">
+                    </div>
+                    <h1 class="presentation-title">Technical test</h1>
+                </div>
+                <h2 class="presentation-subtitle text-center">Show numbers with specific rules</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="section section-dark section-nucleo-icons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h2 class="title">The exercice</h2><br />
+                        <p class="description">
+                            In this page, we prints the numbers from 1 to 100 with spefic rules:
+                            for multiples of three, print “Avalon”,
+                            for multiples of five, print “Innovation”
+                            and for numbers which are multiples of both three and five, print “Avalon Innovation”
+                            instead of the number.
+                        </p>
+
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-12" class="description">
+                        <!--Show dynamic message according to its value-->
+                        <!--Use the index of empty array[100]-->
+                        <p *ngFor="let item of repetition; index as i;">
+                            <!--i+1 to be between 1 and 100-->
+                            {{Message(i+1)}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
